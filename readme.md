@@ -10,7 +10,7 @@ GET: '/api/v1/customer'
 GET: '/api/v1/customer/{id}' 
 
 POST: '/api/v1/customer' 
-    Required: 
+
     {
         type: 'MTN', 
         description: 'Cellphone'
@@ -21,7 +21,7 @@ POST: '/api/v1/customer'
     }
     
 PATCH: '/api/v1/customer/{id}' -
-    Required: 
+
     {
         type: 'MTN', 
         description: 'Cellphone'
