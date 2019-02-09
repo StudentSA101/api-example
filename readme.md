@@ -44,5 +44,5 @@ DELETE: '/api/v1/customer/{id}' -
 
 ### Used to build
 
-   [Lumen]: <https://lumen.laravel.com/>
+   Lumen - <https://lumen.laravel.com/>
 
