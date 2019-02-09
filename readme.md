@@ -1,21 +1,48 @@
-# Lumen PHP Framework
+# API Example 
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+- A simple REST implimentation using Micro-framework Lumen
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+# API Endpoints: 
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+GET: '/api/v1/customer'
 
-## Security Vulnerabilities
+GET: '/api/v1/customer/{id}' 
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+POST: '/api/v1/customer' 
+    Required: 
+    {
+        type: 'MTN', 
+        description: 'Cellphone'
+        id_number: '8712121241123',
+        first_name: 'John',
+        last_name: 'Test'
+        value: 'Number'
+    }
+    
+PATCH: '/api/v1/customer/{id}' -
+    Required: 
+    {
+        type: 'MTN', 
+        description: 'Cellphone'
+        id_number: '8712121241123',
+        first_name: 'John',
+        last_name: 'Test'
+        value: 'Number'
+    }
+DELETE: '/api/v1/customer/{id}' -
 
-## License
+### Installation
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1.  Pull from Repository
+2.  composer install
+3.  setup env
+4.  generate base64 code for env APP_KEY=base64 (use example)
+5.  setup database
+6.  run php migrate --seed to run migrations and seeder for dummy data
+7.  else create new data using endpoint POST: '/api/v1/customer'
+
+### Used to build
+
+   [Lumen]: <https://lumen.laravel.com/>
+
