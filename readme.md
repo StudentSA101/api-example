@@ -1,6 +1,6 @@
 # API Example 
 
-- A simple REST implimentation using Micro-framework Lumen
+- A simple REST implementation using Micro-framework Lumen
 
 # API Endpoints: 
 
