@@ -30,6 +30,7 @@ PATCH: '/api/v1/customer/{id}' -
         last_name: 'Test'
         value: 'Number'
     }
+    
 DELETE: '/api/v1/customer/{id}' -
 
 ### Installation
